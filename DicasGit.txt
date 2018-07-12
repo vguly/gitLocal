@@ -84,6 +84,10 @@ RESOLUÇÃO DE CONFLITOS:
 	
 	> GIT REBASE <ramo origem> <ramo destino>   -> atualiza o destino com base na origem
 
+Opções de REBASE:
+	continue, abort e skip  (Podemos continuar um rebase a partir do ponto de conflito, abortar o rebase e voltar ao estado original ou pular o conflito para lidar com ele mais pra frente.)
+
+
 
 PARA O TRABALHO:
 
