@@ -3,7 +3,7 @@
 Repositorio GIT = é uma pasta controlada pelo git
 Release = é uma modificação definitiva
 Untracked files:		Arquivo que o GIT ainda não está monitorando
-Wworking Directory ==> representa o estado atual dos arquivos no repositório. 
+Working Directory ==> representa o estado atual dos arquivos no repositório. 
 
 Comandos:
 	> git clone <url do gitlab>   	baixa os arquivos do GITLAB para a maquina
@@ -24,7 +24,7 @@ Comandos:
 	> git commit -a -m "<mensagem">	A opção -a inclui imediatamente no commit todos os arquivos modificados ou removidos! Porém, ela não adiciona os arquivos novos. Podemos combinar a opção de mensagem com git commit -a -m 'Mensagem de commit' para não precisar escrever a mensagem no editor padrão do console.
 	
 	> git log 			Mostra o que foi acontecendo neste projeto ao longo do tempo
-	> git whatchanged		Mostra o historico e mais os arquivos modificados
+	> git whatchanged  [-p]		Mostra o historico e mais os arquivos modificados
 	
 	> git remote add <alias repositorio> <link remoto-copiada do github>  
 	> git remote add origin https://github.com/vguly/gitLocal.git   
@@ -33,5 +33,11 @@ Comandos:
 	> git push <alias repositorio que vc deu> <nome do branch>
 		fica:  git push origin master
 		
-		
-				
+	> git pull origin master 	Sincronização com o repo remoto:
+		Para que o desenvolvedor tenha em seu computador as novas versões dos arquivos, 
+		basta que ele execute o comando git pull origin master	
+
+
+DICAS:
+
+- Adicionar Colaboradores: A URL que permite adicionar colaboradores a um projeto é parecida com esta: https://github.com/[seu-nome-de-usuario]/curso-git/settings/collaboration
