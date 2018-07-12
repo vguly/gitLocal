@@ -37,6 +37,12 @@ Comandos:
 		Para que o desenvolvedor tenha em seu computador as novas versões dos arquivos, 
 		basta que ele execute o comando git pull origin master	
 
+Trabalhando com branches:
+
+	> git branch 			Mostra todas as branch do projeto  (A branch que vc está trabalhando aparece com *)
+	> git branch <nome da branch> 	Cria uma nova branch com o nome definido 
+	
+
 
 DICAS:
 
