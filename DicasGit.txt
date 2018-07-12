@@ -79,3 +79,6 @@ comandos para deletar uma branch remota:
 	
 RESOLUÇÃO DE CONFLITOS: 
 
+	> GIT PULL 	- "força" uma sincronização para possibilitar um merge dos arquivos alterados (atualiza)
+	e depois GIT PUSH
+	
