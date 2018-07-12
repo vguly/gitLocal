@@ -110,6 +110,13 @@ PARA excluir uma pequena alteração pontual => usa-se o REVERT
 	4. GIT COMMIT
 
 
+usando GIT avançado (tem que rever estes topicos) 
+
+- Guardando alterações para mais tarde: git stash 
+- Buscando por bugs em muitos commits git bisect start  +   git bisect bad HEAD
+-  notação de dois hífens "--" indica que os parâmetros seguintes serão todos nomes de arquivos 
+
+
 
 PARA O TRABALHO:
 
@@ -139,5 +146,14 @@ PARA O TRABALHO:
 	
 	
 
+ATALHOS: adicionar os comandos no arquivo git.config que fica na pasta do repositorio
+
+[alias]
+	st = status
+
+ou a sequencia de comandos inteira
+
+[alias]
+  envia = !git checkout master && git pull && git checkout desenvolvimento && git rebase master && git checkout master && git merge desenvolvimento && git push
 	
 	
