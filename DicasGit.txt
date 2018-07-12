@@ -102,6 +102,9 @@ PARA O TRABALHO:
 	reinserir as alterações da master primeiro (atualize sua versao de desenvolvimento da master)
 		git rebase master desenvolveVick 
 		(isso evita o conflito e o merge)
+
+		4.1.1  se continuar a dar erro no rebase tente novamente
+		git rebase --continue  (continua a fazer o rebase)	
 		
 5. traga as suas alterações da sua branch local para a branch master 
 	git merge <nome da branch =desenvolveVick>
