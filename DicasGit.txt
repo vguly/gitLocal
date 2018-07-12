@@ -89,6 +89,28 @@ Opções de REBASE:
 
 
 
+DESFAZENDO ALTERAÇÔES 
+
+== CHECKOUT tem 2 funções:
+	>> GIT CHECKOUT -B <nome_da_Branch> 		cria uma branch nova e muda para ela
+	>> GIT CHECKOUT <nome_do_arquivo> 		volta o arquivo para o ulimo estado que estava no repositorio
+
+Para voltar a uma versão anterior => usa-se o RESET:
+	1. >   GIT LOG 
+	2. obtem o identificador da versão que se quer voltar <f5d80bc98cad26cf68659ad20b3ab8a26d2cc9c5>
+	   > GIT RESET <identificador> 
+	3. GIT ADD
+	4. GIT COMMIT
+
+PARA excluir uma pequena alteração pontual => usa-se o REVERT
+	1. >   GIT LOG 
+	2. obtem o identificador da versão que se quer voltar <f5d80bc98cad26cf68659ad20b3ab8a26d2cc9c5>
+	   > GIT REVERT <identificador> 
+	3. GIT ADD
+	4. GIT COMMIT
+
+
+
 PARA O TRABALHO:
 
 1. crie uma branch local para voce
