@@ -22,6 +22,12 @@ Comandos:
 	> git add <arquivo> 		controla o arquivo para mim, então o arquivo passa a ser monitorado
 	
 	> git commit -a -m "<mensagem">	A opção -a inclui imediatamente no commit todos os arquivos modificados ou removidos! Porém, ela não adiciona os arquivos novos. Podemos combinar a opção de mensagem com git commit -a -m 'Mensagem de commit' para não precisar escrever a mensagem no editor padrão do console.
-	> git log 			Mostra o que foi acontecendo neste projeto
 	
+	> git log 			Mostra o que foi acontecendo neste projeto ao longo do tempo
+	> git whatchanged		Mostra o historico e mais os arquivos modificados
+	
+	> git remote add <nome repositorio> <link remoto>  
+	> git remote add origin https://github.com/vguly/gitLocal.git   
+					configura o repositorio remoto do GitHub
+					add <nome>  -> "origin" é o nome padrão, pode ser qq nome
 				
