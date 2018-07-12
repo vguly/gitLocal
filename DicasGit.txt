@@ -26,8 +26,12 @@ Comandos:
 	> git log 			Mostra o que foi acontecendo neste projeto ao longo do tempo
 	> git whatchanged		Mostra o historico e mais os arquivos modificados
 	
-	> git remote add <nome repositorio> <link remoto>  
+	> git remote add <alias repositorio> <link remoto-copiada do github>  
 	> git remote add origin https://github.com/vguly/gitLocal.git   
 					configura o repositorio remoto do GitHub
-					add <nome>  -> "origin" é o nome padrão, pode ser qq nome
+					add <nome>  -> "origin" é o alias padrão, pode ser qq nome
+	> git push <alias repositorio que vc deu> <nome do branch>
+		fica:  git push origin master
+		
+		
 				
