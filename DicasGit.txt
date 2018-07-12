@@ -42,8 +42,40 @@ Trabalhando com branches:
 	> git branch 			Mostra todas as branch do projeto  (A branch que vc está trabalhando aparece com *)
 	> git branch <nome da branch> 	Cria uma nova branch com o nome definido 
 	
+	> git checkout <nome da branch> Muda para trabalhar na branch definida 
+	
+	
+	ATALHO! une os 3 comandos anteriores>   git checkout -t origin/designer  (cria+muda+sincroniza)
+	
+	
+****	Mandar a branch local para o repositorio remoto:
+	> git push - u <origin> <nome da branch>   		o parametro "-u" sincroniza a branch remota com a local. Ao fazer o pull vai dar certo.
+		A saida do comando deve ser: "Branch <nome local> set up to track remote branch <nome branch remoto> from <nome branch principal>."
+		"Branch designer set up to track remote branch designer from origin."
+	
+	> git branch -r			Mostra as branchs remotas 
+		Para sincronizar a sua ramificação local com a remota é necessário forçar a sincronização local com o parametro "-t"
+		
+	> git branch -t <nome da branch local> <nome da branch remota> 
+		No exemplo, fica: git branch -t designer origin/designer
+		Temos como resultado:
+			Branch designer set up to track remote branch designer from origin.Switched to a new branch 'designer'
+		
+	> git branch -D <nome da branch>  Remove uma branch somente se ela estiver sincronizada com outra.
+	
+	> git branch -a 	Lista todas as branches (locais e remotas) 
 
+
+	> git fetch origin	te comando verifica todas as atualizações que foram realizadas no repositório de atalho "origin".
 
 DICAS:
 
 - Adicionar Colaboradores: A URL que permite adicionar colaboradores a um projeto é parecida com esta: https://github.com/[seu-nome-de-usuario]/curso-git/settings/collaboration
+
+git branch -b nomeDaBranch ==> une 2 comandos: git branch nomeDaBranch + git checkout nomeDaBranch.
+
+comandos para deletar uma branch remota:
+	git push -d origin design   OU 	git push origin :design
+	
+RESOLUÇÃO DE CONFLITOS: 
+
