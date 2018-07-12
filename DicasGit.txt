@@ -82,3 +82,33 @@ RESOLUÇÃO DE CONFLITOS:
 	> GIT PULL 	- "força" uma sincronização para possibilitar um merge dos arquivos alterados (atualiza)
 	e depois GIT PUSH
 	
+	> GIT REBASE <ramo origem> <ramo destino>   -> atualiza o destino com base na origem
+
+
+PARA O TRABALHO:
+
+1. crie uma branch local para voce
+	git checkout -b desenvolveVick
+2. faça a alteração 
+	......xxx... 
+	2.1 git add <arquivo> 
+	2.2 git commit -m "alterei"
+3. mude para a branch principal
+	git checkout master 
+4. sincronize com a ultima versao remota da master
+	git pull
+	
+	4.1 se o pull trouxer da master alterações que não estavam no seu desenvolvimento, então tem que 
+	reinserir as alterações da master primeiro (atualize sua versao de desenvolvimento da master)
+		git rebase master desenvolveVick 
+		(isso evita o conflito e o merge)
+		
+5. traga as suas alterações da sua branch local para a branch master 
+	git merge <nome da branch =desenvolveVick>
+6. atualize a branch master remota.
+	git push 
+	
+	
+
+	
+	
