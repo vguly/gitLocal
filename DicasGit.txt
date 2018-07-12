@@ -1,0 +1,27 @@
+========================= GIT   ===============================================
+
+Repositorio GIT = é uma pasta controlada pelo git
+Release = é uma modificação definitiva
+Untracked files:		Arquivo que o GIT ainda não está monitorando
+Wworking Directory ==> representa o estado atual dos arquivos no repositório. 
+
+Comandos:
+	> git clone <url do gitlab>   	baixa os arquivos do GITLAB para a maquina
+	> git tag 			lista as tags, que são marcos para os documentos
+	> git checkout v0.1		sobreescreve os arquivos para a versão da tag v0.1
+	> git blame <arquivo>		Para sair do blame, basta apertar a tecla q / consultar quem foi o autor de cada linha
+	
+	> mkdir <pasta> 		cria uma pasta
+	> cd <pasta>			vai para ela 
+	> git init 			controla a pasta pra mim, ou seja, fala para o git passar a mapear as alteracoes desta pasta no local
+	
+	> git ls-files 			Mostra quais os arquivos que estão sendo controlados
+	> git status 			Mostra o estado atual do repositorio 
+	
+	
+	> git add <arquivo> 		controla o arquivo para mim, então o arquivo passa a ser monitorado
+	
+	> git commit -a -m "<mensagem">	A opção -a inclui imediatamente no commit todos os arquivos modificados ou removidos! Porém, ela não adiciona os arquivos novos. Podemos combinar a opção de mensagem com git commit -a -m 'Mensagem de commit' para não precisar escrever a mensagem no editor padrão do console.
+	> git log 			Mostra o que foi acontecendo neste projeto
+	
+				
