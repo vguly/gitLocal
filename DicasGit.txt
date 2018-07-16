@@ -68,6 +68,30 @@ Trabalhando com branches:
 
 	> git fetch origin	te comando verifica todas as atualizações que foram realizadas no repositório de atalho "origin".
 
+
+
+Atenção!
+a diferença entre 
+git branch -u   #e   git branch -t
+
+	-u
+	Este comando cria uma referência entre uma branch local
+	e uma branch remota após a criação da branch local.
+	-t
+	Este comando cria uma referência entre uma branch local
+	e uma branch remota na hora de criar a nova branch local.
+	No -u quando tu cria uma branch na tua máquina (local) e vai enviar (push) essa branch pro repositório, tu diz qual o nome da branch remota que tu vai linkar a tua branch local
+
+	git push -u origin design
+	ta na branch design vai enviar ela e vi referenciar ela com a origin design
+
+	Já no -t, já existe uma branch remota lá, aí tu vai querer fazer o push desse branch, então tu vai criar uma nova branch e pra essa branch nova que tu ta criando ter referência com a branch que ta no teu repositório tu precisa passar o -t e o nome da tua branch remota
+
+	git branch -t design origin/design
+
+
+
+
 DICAS:
 
 - Adicionar Colaboradores: A URL que permite adicionar colaboradores a um projeto é parecida com esta: https://github.com/[seu-nome-de-usuario]/curso-git/settings/collaboration
@@ -108,6 +132,11 @@ PARA excluir uma pequena alteração pontual => usa-se o REVERT
 	   > GIT REVERT <identificador> 
 	3. GIT ADD
 	4. GIT COMMIT
+
+PARA APAGAR um BRANCH remota:
+	git push origin --delete nomeDaBranchParaApagar
+	#ou
+	git push origin -d nomeDaBranchParaApagar    (obs:Ou seja, o -d (--delete) e o : fazem a mesma coisa)
 
 
 usando GIT avançado (tem que rever estes topicos) 
@@ -155,5 +184,7 @@ ou a sequencia de comandos inteira
 
 [alias]
   envia = !git checkout master && git pull && git checkout desenvolvimento && git rebase master && git checkout master && git merge desenvolvimento && git push
+	
+	
 	
 	
