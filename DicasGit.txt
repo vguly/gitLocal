@@ -204,5 +204,11 @@ DICAS:
 	git log --pretty=oneline	mostra as alterações  uma por linha  (facilita a vizualização)
 	git log --pretty=full		mostra detalhes de quem fez as alterações
 	git log -p			mostra o que foi alterado no arquivo
-	
-	
+	git log --graph 		mostra graficamente os branches e alteraçoes no projeot	
+
+
+Cuidado! 
+	git cherry-pick <id_modificacao_19f0bb7d8b4be8ecd687b48fca301b71b95eab41> passa um merge parcial 
+
+no GITHUB 
+	 WATCH - existe também a função watch no Github, que te permite seguir um repositório e acompanhar seu progresso.
