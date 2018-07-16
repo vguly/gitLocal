@@ -37,6 +37,14 @@ Comandos:
 		Para que o desenvolvedor tenha em seu computador as novas versões dos arquivos, 
 		basta que ele execute o comando git pull origin master	
 
+	
+	no GITHUB -> OPÇÂO FORK 
+	o FORK cria um projeot identico ao projeto que se quer contribuir no espaço individual 
+	para comunicar ao dono original basta incluir um 'pull request' e o dono pode decidir se aceita ou nao a alteração
+	
+	
+
+
 Trabalhando com branches:
 
 	> git branch 			Mostra todas as branch do projeto  (A branch que vc está trabalhando aparece com *)
@@ -110,7 +118,7 @@ RESOLUÇÃO DE CONFLITOS:
 
 Opções de REBASE:
 	continue, abort e skip  (Podemos continuar um rebase a partir do ponto de conflito, abortar o rebase e voltar ao estado original ou pular o conflito para lidar com ele mais pra frente.)
-
+	--continue deve ser utilizado após a resolução manual de conflitos; --skip faz com que suas alterações sejam descartadas; --abort volta atrás em todo o processo de rebase
 
 
 DESFAZENDO ALTERAÇÔES 
@@ -139,6 +147,10 @@ PARA APAGAR um BRANCH remota:
 	git push origin -d nomeDaBranchParaApagar    (obs:Ou seja, o -d (--delete) e o : fazem a mesma coisa)
 
 
+Trzaendo as alterações para o master:
+	git merge <nome da branch de desenvolvimento) -> traz as alterações da branch de dsv para a branch master
+
+
 usando GIT avançado (tem que rever estes topicos) 
 
 - Guardando alterações para mais tarde: git stash 
@@ -150,7 +162,7 @@ usando GIT avançado (tem que rever estes topicos)
 PARA O TRABALHO:
 
 1. crie uma branch local para voce
-	git checkout -b desenvolveVick
+	git checkout -b branchdesenvolveVick
 2. faça a alteração 
 	......xxx... 
 	2.1 git add <arquivo> 
@@ -162,10 +174,11 @@ PARA O TRABALHO:
 	
 	4.1 se o pull trouxer da master alterações que não estavam no seu desenvolvimento, então tem que 
 	reinserir as alterações da master primeiro (atualize sua versao de desenvolvimento da master)
-		git rebase master desenvolveVick 
+		git rebase master(origem) branchdesenvolveVick(destino) 
 		(isso evita o conflito e o merge)
 
 		4.1.1  se continuar a dar erro no rebase tente novamente
+		git add <arquivo>
 		git rebase --continue  (continua a fazer o rebase)	
 		
 5. traga as suas alterações da sua branch local para a branch master 
@@ -185,6 +198,11 @@ ou a sequencia de comandos inteira
 [alias]
   envia = !git checkout master && git pull && git checkout desenvolvimento && git rebase master && git checkout master && git merge desenvolvimento && git push
 	
-	
+
+DICAS:
+
+	git log --pretty=oneline	mostra as alterações  uma por linha  (facilita a vizualização)
+	git log --pretty=full		mostra detalhes de quem fez as alterações
+	git log -p			mostra o que foi alterado no arquivo
 	
 	
