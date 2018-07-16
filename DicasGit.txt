@@ -212,3 +212,17 @@ Cuidado!
 
 no GITHUB 
 	 WATCH - existe também a função watch no Github, que te permite seguir um repositório e acompanhar seu progresso.
+	 
+
+REMOVENDO ARQUIVOS do controle de versao:
+
+git rm nome-do-arquivo  
+
+#OU 
+
+git add .
+git commit -am 'mensagem'   
+
+	Esse argumento -a = all, para o git ver que um arquivo foi removido e remove-lo quando outras pessoas realizarem o pull.
+
+OBS: Caso você tenha um arquivo que não deseja rastreá-lo pelo git basta apenas informá-lo dentro do arquivo "gitignore" que fica na raiz do seu projeto.
