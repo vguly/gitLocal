@@ -49,7 +49,7 @@ Trabalhando com branches:
 	
 	
 ****	Mandar a branch local para o repositorio remoto:
-	> git push - u <origin> <nome da branch>   		o parametro "-u" sincroniza a branch remota com a local. Ao fazer o pull vai dar certo.
+	> git push -u <origin> <nome da branch>   		o parametro "-u" sincroniza a branch remota com a local. Ao fazer o pull vai dar certo.
 		A saida do comando deve ser: "Branch <nome local> set up to track remote branch <nome branch remoto> from <nome branch principal>."
 		"Branch designer set up to track remote branch designer from origin."
 	
